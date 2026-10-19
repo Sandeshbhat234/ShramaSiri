@@ -1,0 +1,15 @@
+targets:
+  $default:
+    builders:
+      drift_dev:
+        options:
+          # Local column names and JSON keys match the Postgres columns, so
+          # server rows can be parsed with the generated fromJson directly.
+          use_sql_column_name_as_json_key: true
+          store_date_time_values_as_text: true
+          named_parameters: true
+          generate_manager: false
+          sql:
+            dialect: sqlite
+            options:
+              version: "3.45"

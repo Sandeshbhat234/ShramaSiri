@@ -1,0 +1,789 @@
+{
+  "@@locale": "en",
+  "appTitle": "ShramaSiri",
+  "navHome": "Home",
+  "navWorkers": "Workers",
+  "navAttendance": "Attendance",
+  "navAccounts": "Accounts",
+  "save": "Save",
+  "cancel": "Cancel",
+  "ok": "OK",
+  "yes": "Yes",
+  "no": "No",
+  "edit": "Edit",
+  "search": "Search",
+  "retry": "Try again",
+  "close": "Close",
+  "done": "Done",
+  "loading": "Loading…",
+  "moreDetails": "More details",
+  "date": "Date",
+  "today": "Today",
+  "yesterday": "Yesterday",
+  "notes": "Notes (optional)",
+  "amount": "Amount",
+  "amountRupees": "Amount (₹)",
+  "balance": "Balance",
+  "total": "Total",
+  "loadMore": "Show more",
+  "filterAll": "All",
+  "from": "From",
+  "to": "To",
+  "required": "Required",
+  "selectDate": "Change date",
+  "signIn": "Sign in",
+  "signUp": "Create account",
+  "email": "Email",
+  "password": "Password",
+  "forgotPassword": "Forgot password?",
+  "newHereCreate": "New here? Create an account",
+  "haveAccountSignIn": "Already have an account? Sign in",
+  "passwordTooShort": "Password must be at least 8 characters",
+  "invalidEmail": "Enter a valid email",
+  "checkEmailTitle": "Check your email",
+  "checkEmailBody": "We sent a confirmation to {email}. Enter the code from that email, or open its link and then sign in.",
+  "@checkEmailBody": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "emailCode": "Code from email",
+  "verify": "Verify",
+  "resetTitle": "Reset password",
+  "resetHelp": "We will email you a code to set a new password.",
+  "sendCode": "Send code",
+  "newPassword": "New password",
+  "resetDone": "Password changed.",
+  "signInFailed": "Email or password is wrong",
+  "codeInvalid": "The code is wrong or has expired",
+  "needInternet": "This step needs internet. Please connect and try again.",
+  "setupFarmTitle": "Set up your farm",
+  "setupFarmHelp": "You will be the owner. You can invite family members later.",
+  "farmName": "Farm name",
+  "yourFullName": "Your full name",
+  "yourKannadaName": "Your name in Kannada (optional)",
+  "startFarm": "Start",
+  "invitationsTitle": "You have been invited",
+  "joinFarm": "Join {farm}",
+  "@joinFarm": {
+    "placeholders": {
+      "farm": {
+        "type": "String"
+      }
+    }
+  },
+  "orCreateOwn": "Or start your own farm",
+  "preparing": "Downloading farm records…",
+  "setupRequiredTitle": "Server not configured",
+  "setupRequiredBody": "This copy of the app was built without the Supabase address and key. Rebuild it with --dart-define-from-file (see README).",
+  "otherUserPendingTitle": "This phone has unsent records",
+  "otherUserPendingBody": "Records saved by {email} have not reached the cloud yet. Sign in as {email} first so that nothing is lost.",
+  "@otherUserPendingBody": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "accessRevokedTitle": "Access removed",
+  "accessRevokedBody": "Your access to this farm was removed. Please ask the owner. Records on this phone are kept and will upload if access is restored.",
+  "checkAgain": "Check again",
+  "dbErrorTitle": "Could not open saved data",
+  "dbErrorBody": "The records stored on this phone could not be opened. You can keep a backup copy of the file and start fresh; synced records will download again.",
+  "resetLocalData": "Keep a backup and start fresh",
+  "signOut": "Sign out",
+  "signOutConfirm": "Sign out of this phone?",
+  "signOutPendingWarning": "{count} records are not in the cloud yet. They stay on this phone and will upload when you sign in again with the same account.",
+  "@signOutPendingWarning": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "syncAllSynced": "All changes synced",
+  "syncSavedOnDevice": "Saved on device — waiting for internet",
+  "syncInProgress": "Syncing…",
+  "syncNeedsAttention": "{count} records need attention",
+  "@syncNeedsAttention": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "syncOffline": "Offline",
+  "syncSignInAgain": "Sign in again to sync",
+  "syncServerProblem": "Server problem — will try again",
+  "syncNow": "Sync now",
+  "lastSynced": "Last synced: {time}",
+  "@lastSynced": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "neverSynced": "Not synced yet",
+  "pendingCount": "Waiting to upload: {count}",
+  "@pendingCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "syncTitle": "Sync",
+  "statusSaved": "Saved on device",
+  "statusSynced": "Synced",
+  "statusPendingVerification": "Pending verification",
+  "statusConflict": "Needs review",
+  "statusRejected": "Not accepted",
+  "attentionTitle": "Needs your attention",
+  "keepMine": "Keep my version",
+  "keepTheirs": "Use the other version",
+  "discardMine": "Remove my entry",
+  "retryUpload": "Send again",
+  "myVersion": "My version",
+  "otherVersion": "Saved by someone else",
+  "diagnostics": "Sync details",
+  "noAttention": "Nothing needs attention",
+  "clockWrong": "The phone date or time looks wrong. The app uses internet time for dates.",
+  "readOnlyBanner": "Not checked with the server for 30 days. Connect to the internet to keep adding records.",
+  "opFailedRetrying": "Could not send yet — retrying",
+  "opAttendance": "Attendance",
+  "opWorker": "Worker details",
+  "opGroup": "Group",
+  "opWork": "Work entry",
+  "opMoney": "Money entry",
+  "opSettlement": "Weekly accounts",
+  "opMember": "Family member",
+  "opFarm": "Farm settings",
+  "conflictAttendanceExists": "Attendance for this worker on this day was already marked on another phone.",
+  "conflictStale": "Someone else changed this record at the same time.",
+  "errInsufficientLeaderFunds": "The leader has only {amount} left to distribute.",
+  "@errInsufficientLeaderFunds": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "errWeekClosed": "This week's accounts are closed. Ask the owner to correct it.",
+  "errForbidden": "You do not have permission for this.",
+  "errAccessRevoked": "Your access to this farm was removed.",
+  "errVerificationExpired": "Please connect to the internet once so the app can confirm your access.",
+  "errInvalidAmount": "Enter a valid amount",
+  "errInvalidName": "Enter a name",
+  "errInvalidPhone": "Enter a valid phone number",
+  "errInvalidDate": "Choose a valid date",
+  "errInvalidUnits": "Enter days between 0 and 3 (e.g. 0.75)",
+  "errAlreadyReversed": "This entry is already cancelled.",
+  "errExceedsLoan": "More than the loan still owed ({amount}).",
+  "@errExceedsLoan": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "errExceedsLeaderPayable": "More than what is owed to the leader ({amount}).",
+  "@errExceedsLeaderPayable": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "errLeaderFundsUsed": "This money was already distributed. Only {amount} is left with the leader.",
+  "@errLeaderFundsUsed": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "errLoanRepaid": "Part of this loan was already repaid.",
+  "errLeaderPayableSettled": "This was already repaid to the leader.",
+  "errNotALeader": "Choose a worker marked as group leader.",
+  "errInvalidPayer": "Choose the family member who paid.",
+  "errReasonRequired": "Please write a reason.",
+  "errAlreadyInvited": "This email is already invited.",
+  "errCannotChangeOwner": "The owner's access cannot be changed here.",
+  "errInvalidWeek": "Choose a valid week.",
+  "errWeekInFuture": "This week has not started yet.",
+  "errTextTooLong": "Text is too long",
+  "errInvalidData": "Some details were not valid.",
+  "errNotFound": "This record no longer exists.",
+  "errGeneric": "Something went wrong. Please try again.",
+  "greeting": "Namaskara, {name}",
+  "@greeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "todayWorkers": "Today's workers",
+  "peopleCount": "{count} workers",
+  "@peopleCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todayWages": "Today's wages (earned)",
+  "weekEarned": "This week — wages earned",
+  "wagesToPay": "Wages still to pay",
+  "advancesAhead": "Paid ahead of earnings (advance)",
+  "loansOutstanding": "Loans to recover",
+  "leaderCashHeld": "With group leaders, not yet accounted",
+  "markAttendance": "Attendance",
+  "giveMoney": "Give Money",
+  "assignWork": "Assign Work",
+  "weeklyAccounts": "Weekly Accounts",
+  "recentPayments": "Recent payments",
+  "todaysWork": "Today's Work",
+  "noWorkToday": "No work recorded for today",
+  "noPayments": "No payments yet",
+  "paidByLine": "Paid by {name}",
+  "@paidByLine": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "recordedByLine": "Recorded by {name}",
+  "@recordedByLine": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "receivedByLine": "Received by {name}",
+  "@receivedByLine": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "updatedByLine": "Updated by {name}",
+  "@updatedByLine": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "earningsNote": "Earned = work done. Paid = money handed over. Kept separate.",
+  "workDiary": "Work diary",
+  "reports": "Reports",
+  "addWorker": "Add worker",
+  "editWorker": "Edit worker",
+  "nameKannada": "Name (in Kannada)",
+  "nameEnglish": "Name in English (optional)",
+  "phoneOptional": "Phone (optional)",
+  "dailyWage": "Daily Wage",
+  "dailyWageRupees": "Daily Wage (₹)",
+  "isLeader": "Group leader",
+  "isLeaderHelp": "Can receive money to distribute to others",
+  "archiveWorker": "Hide from list",
+  "unarchiveWorker": "Show in list again",
+  "archiveHelp": "History and accounts are kept.",
+  "archived": "Hidden",
+  "showArchived": "Show hidden workers",
+  "noWorkers": "No workers yet. Add your first worker.",
+  "noMatches": "No one matches",
+  "wageDue": "Wages due",
+  "advanceAhead": "Advance given",
+  "settledUp": "Settled",
+  "loanDue": "Loan",
+  "tabAttendance": "Attendance",
+  "tabWork": "Work",
+  "tabMoney": "Money",
+  "groups": "Groups",
+  "addGroup": "Add group",
+  "editGroup": "Edit group",
+  "groupName": "Group name",
+  "leader": "Leader",
+  "noLeader": "No leader",
+  "members": "Members",
+  "selectWorkers": "Select workers",
+  "noGroups": "No groups yet. Groups help mark attendance for a crew quickly.",
+  "memberCount": "{count} members",
+  "@memberCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "wageChangeNote": "A new wage applies to new attendance only. Past days keep their rate.",
+  "workerDetails": "Worker",
+  "groupLeaderBadge": "Leader",
+  "addAdjustment": "Add adjustment",
+  "adjustmentHelp": "Extra earnings, deductions, previous balance or loan repayments.",
+  "openingBalanceHelp": "Use a minus sign if the worker owed the farm (e.g. -500).",
+  "statement": "Statement",
+  "fullDay": "Full day",
+  "halfDay": "Half day",
+  "absent": "Absent",
+  "customUnitsShort": "Other",
+  "customUnits": "Days worked (e.g. 0.75)",
+  "rateForDay": "Wage for this day (₹)",
+  "markAllFull": "All full day",
+  "presentCount": "Present: {count}",
+  "@presentCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "saveAttendance": "Save attendance",
+  "attendanceSaved": "Saved {count} changes",
+  "@attendanceSaved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "noChanges": "No changes to save",
+  "addNewWorker": "Add a new worker",
+  "history": "History",
+  "attendanceHistory": "Attendance history",
+  "unsavedChanges": "You have unsaved changes. Leave without saving?",
+  "leave": "Leave",
+  "weekClosedNote": "This week's accounts are closed.",
+  "noActiveWorkers": "Add workers first",
+  "daysShort": "{days} d",
+  "@daysShort": {
+    "placeholders": {
+      "days": {
+        "type": "String"
+      }
+    }
+  },
+  "atRate": "@ {amount}/day",
+  "@atRate": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "changeGroup": "Group",
+  "markGroup": "Mark {group} full day",
+  "@markGroup": {
+    "placeholders": {
+      "group": {
+        "type": "String"
+      }
+    }
+  },
+  "addWork": "Add work",
+  "editWork": "Edit work",
+  "workType": "Work",
+  "fieldName": "Field / plot (optional)",
+  "description": "Description (optional)",
+  "status": "Status",
+  "statusPlanned": "Planned",
+  "statusInProgress": "In progress",
+  "statusCompleted": "Completed",
+  "statusCancelled": "Cancelled",
+  "assignedBy": "Assigned by {name}",
+  "@assignedBy": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "noWork": "No work recorded",
+  "tasksDontMultiply": "Tasks do not change wages — wages come from attendance.",
+  "addWorkType": "New type of work",
+  "workTypeName": "Name of the work",
+  "chooseWorkType": "Choose work",
+  "last30Days": "Last 30 days",
+  "recipient": "To whom",
+  "selectWorker": "Select worker",
+  "selectLeader": "Select group leader",
+  "purpose": "Purpose",
+  "paidBy": "Paid By",
+  "receivedBy": "Received by",
+  "method": "How paid",
+  "methodCash": "Cash",
+  "methodUpi": "UPI",
+  "methodBank": "Bank transfer",
+  "methodOther": "Other",
+  "reference": "Reference no. (optional)",
+  "typeAdvance": "Advance",
+  "typeWagePayment": "Wage payment",
+  "typeBonus": "Bonus",
+  "typeAddition": "Extra earning",
+  "typeDeduction": "Deduction",
+  "typeOpeningBalance": "Previous balance",
+  "typeLoan": "Personal loan",
+  "typeLoanRepayment": "Loan repaid in cash",
+  "typeLoanOffset": "Loan cut from wages",
+  "typeReimbursement": "Expense paid back",
+  "typeLeaderTransfer": "Money for leader to distribute",
+  "typeLeaderAllocation": "Paid through leader",
+  "typeLeaderReturn": "Returned by leader",
+  "typeLeaderSelfFunded": "Leader paid from own money",
+  "helpAdvance": "Given before wages are due. Deducted in the weekly accounts.",
+  "helpWagePayment": "Paying wages already earned.",
+  "helpLeaderTransfer": "This money is entrusted to the leader to give to other workers. It is not the leader's own wages.",
+  "helpLoan": "Kept separate from wages. Not deducted unless you choose to.",
+  "helpBonus": "Extra pay given now. Counted as wages earned and paid.",
+  "helpReimbursement": "Paying back money they spent for the farm. Not wages.",
+  "helpAddition": "Extra wages earned (paid later).",
+  "helpDeduction": "Reduces wages earned.",
+  "helpLoanOffset": "Part of the wages is kept to repay the loan. No cash changes hands.",
+  "leaderHolds": "Now with leader to distribute: {amount}",
+  "@leaderHolds": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "largeAmountConfirm": "{amount} is a large amount. Is it correct?",
+  "@largeAmountConfirm": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "duplicateConfirm": "{amount} to {worker} was already recorded recently. Record another one?",
+  "@duplicateConfirm": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "worker": {
+        "type": "String"
+      }
+    }
+  },
+  "yesRecord": "Yes, record it",
+  "checkAgainBtn": "Let me check",
+  "savedOnDeviceToast": "Saved on device",
+  "savedAndSyncedToast": "Saved",
+  "nowBalance": "Balance now: {amount}",
+  "@nowBalance": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "paymentHistory": "Payment history",
+  "filterWorker": "Worker",
+  "filterPayer": "Paid by",
+  "filterType": "Type",
+  "noEntries": "No entries",
+  "entryDetails": "Entry details",
+  "reverseEntry": "Cancel this entry",
+  "correctEntry": "Correct this entry",
+  "reason": "Reason",
+  "reversedLabel": "Cancelled",
+  "reversalLabel": "Cancellation of an earlier entry",
+  "reverseExplain": "The original stays in history and a cancelling entry is added.",
+  "correctExplain": "The old entry is cancelled and this corrected one is recorded.",
+  "changeHistory": "Change history",
+  "worker": "Worker",
+  "dateTime": "Date and time",
+  "type": "Type",
+  "allTypes": "All types",
+  "everyone": "Everyone",
+  "anyDate": "Any date",
+  "thisWeek": "This week",
+  "thisMonth": "This month",
+  "chooseDates": "Choose dates",
+  "accountsTitle": "Accounts",
+  "balancesTitle": "Balances",
+  "leaderFunds": "Group leader money",
+  "entrusted": "Entrusted",
+  "distributed": "Confirmed distributed",
+  "returned": "Returned",
+  "unreconciled": "Not yet accounted",
+  "pendingVerificationAmount": "{amount} waiting for verification",
+  "@pendingVerificationAmount": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "ownPocketOwed": "Owed to leader (paid from own money)",
+  "recordDistribution": "Record distribution",
+  "recordReturn": "Leader returned cash",
+  "recordOwnPocket": "Leader paid from own money",
+  "repayLeader": "Repay leader",
+  "giveToLeader": "Give money to leader",
+  "distributeHelp": "Enter how much the leader gave each worker.",
+  "ownPocketHelp": "Wages the leader paid to workers from their own money. The farm owes this to the leader.",
+  "distributionTotal": "Total {amount} of {available}",
+  "@distributionTotal": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "available": {
+        "type": "String"
+      }
+    }
+  },
+  "exceedsAvailable": "More than the leader holds",
+  "noLeaders": "No group leaders. Mark a worker as group leader in their details.",
+  "leaderSelfShare": "(leader's own wages)",
+  "leaderPersonalNote": "The leader's own wages and advances are in their worker page, separate from this money.",
+  "distributionSaved": "Saved {count} distributions",
+  "@distributionSaved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklySettlement": "Weekly Settlement",
+  "openingBalance": "Previous balance",
+  "daysWorked": "Days worked",
+  "earned": "Earned",
+  "additions": "Extra / adjustments",
+  "advanceGiven": "Advance",
+  "paidDirect": "Paid",
+  "paidViaLeader": "Paid through leader",
+  "remaining": "Remaining",
+  "overpaid": "Paid extra (carried forward as advance)",
+  "payAmount": "Pay {amount}",
+  "@payAmount": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "payPart": "Pay part",
+  "closeWeek": "Close week",
+  "closeWeekHelp": "Closing marks the week as checked. Unpaid balances carry to next week. Records stay correctable.",
+  "weekClosed": "Closed",
+  "weekOpen": "Open",
+  "needsReview": "Changed after closing — please review",
+  "markReviewed": "Mark reviewed",
+  "reopenWeek": "Reopen week",
+  "closedBy": "Closed by {name}",
+  "@closedBy": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "share": "Share",
+  "weekTotalDue": "Total remaining",
+  "weekTotalEarned": "Total earned",
+  "previousWeek": "Previous week",
+  "nextWeek": "Next week",
+  "noActivityWeek": "No work or payments this week",
+  "atClosing": "At closing: {amount}",
+  "@atClosing": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "payConfirm": "Record {amount} paid to {worker}?",
+  "@payConfirm": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "worker": {
+        "type": "String"
+      }
+    }
+  },
+  "pastWeeks": "Past weeks",
+  "stmtHeader": "ShramaSiri — wage statement",
+  "stmtWeek": "Week: {range}",
+  "@stmtWeek": {
+    "placeholders": {
+      "range": {
+        "type": "String"
+      }
+    }
+  },
+  "stmtFarm": "Farm: {farm}",
+  "@stmtFarm": {
+    "placeholders": {
+      "farm": {
+        "type": "String"
+      }
+    }
+  },
+  "stmtDays": "Days worked: {days}",
+  "@stmtDays": {
+    "placeholders": {
+      "days": {
+        "type": "String"
+      }
+    }
+  },
+  "stmtRate": "Daily wage: {amount}",
+  "@stmtRate": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "stmtLine": "{label}: {amount}",
+  "@stmtLine": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "stmtFooter": "Prepared by {name}",
+  "@stmtFooter": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "workersInWeek": "{count} workers",
+  "@workersInWeek": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "labourCost": "Labour cost (wages earned)",
+  "cashPaidOut": "Cash paid out",
+  "cashReturned": "Cash returned to farm",
+  "netCash": "Net cash out",
+  "outstandingNow": "Outstanding now",
+  "byWorker": "By worker",
+  "byFamilyMember": "Paid by family member",
+  "byWorkType": "By work (approximate)",
+  "byPaymentType": "By type",
+  "noTask": "No task recorded",
+  "attendanceSummary": "Attendance",
+  "periodToday": "Today",
+  "periodWeek": "This week",
+  "periodMonth": "This month",
+  "periodCustom": "Choose",
+  "exportCsv": "Export CSV",
+  "shareSummary": "Share summary",
+  "settlementHistory": "Weekly settlements",
+  "reportNote": "Earned wages, cash paid, balances and leader money are shown separately on purpose.",
+  "summaryTitle": "ShramaSiri summary {range}",
+  "@summaryTitle": {
+    "placeholders": {
+      "range": {
+        "type": "String"
+      }
+    }
+  },
+  "settings": "Settings",
+  "language": "Language",
+  "weekStartsOn": "Wage week starts on",
+  "currencyNote": "Currency: Indian Rupee (₹)",
+  "profile": "My details",
+  "familyMembers": "Family members",
+  "inviteMember": "Invite family member",
+  "inviteHelp": "They should install the app and create an account with this same email.",
+  "roleOwner": "Owner",
+  "roleAdmin": "Admin",
+  "roleMember": "Family member",
+  "memberInvited": "Invited — not joined yet",
+  "memberDisabled": "Access removed",
+  "disableAccess": "Remove access",
+  "enableAccess": "Restore access",
+  "makeAdmin": "Make admin",
+  "makeMember": "Make regular member",
+  "disableConfirm": "Remove {name}'s access? Their past records stay.",
+  "@disableConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "auditHistory": "Activity history",
+  "about": "About",
+  "version": "Version {version}",
+  "@version": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutText": "ShramaSiri is a simple notebook for farm labour, wages and payments. It works without internet and syncs safely between family phones.",
+  "farmSection": "Farm",
+  "accountSection": "Account",
+  "workTypes": "Types of work",
+  "ownerOnly": "Only the owner or admin can change this.",
+  "loggedInAs": "Signed in as {email}",
+  "@loggedInAs": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "auditWorkerCreated": "Worker added",
+  "auditWorkerUpdated": "Worker details changed",
+  "auditWorkerArchived": "Worker hidden",
+  "auditAttendanceMarked": "Attendance marked",
+  "auditAttendanceCorrected": "Attendance corrected",
+  "auditWorkAssigned": "Work assigned",
+  "auditWorkUpdated": "Work changed",
+  "auditMoney": "Money recorded: {type}",
+  "@auditMoney": {
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "auditReversed": "Entry cancelled",
+  "auditSettlementClosed": "Week closed",
+  "auditSettlementReviewed": "Week reviewed",
+  "auditSettlementReopened": "Week reopened",
+  "auditMemberInvited": "Family member invited",
+  "auditMemberJoined": "Family member joined",
+  "auditMemberUpdated": "Access changed",
+  "auditOther": "Change: {action}",
+  "@auditOther": {
+    "placeholders": {
+      "action": {
+        "type": "String"
+      }
+    }
+  },
+  "addPresentWorkers": "Add everyone present that day",
+  "recordedBy": "Recorded by",
+  "daysUnit": "days",
+  "fullName": "Full name",
+  "fullDayShort": "Full",
+  "halfDayShort": "Half"
+}
