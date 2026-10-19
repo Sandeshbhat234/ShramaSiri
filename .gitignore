@@ -53,3 +53,7 @@ android/key.properties
 *.jks
 *.keystore
 .env.local
+
+# Supabase CLI local state
+supabase/.temp/
+supabase/.branches/
